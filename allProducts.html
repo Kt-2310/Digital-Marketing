@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>All Products Listing | Aphrodite Customisation</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Font: Lexend -->
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f20d0d",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#1c0d0d] dark:text-white min-h-screen">
+<div class="layout-container flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-solid border-[#f4e7e7] dark:border-[#3d1a1a] px-4 md:px-20 py-3">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between gap-8">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-8">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-[#1c0d0d] dark:text-white text-xl font-black leading-tight tracking-tight uppercase">Aphrodite</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-9">
+<a class="text-[#1c0d0d] dark:text-white text-sm font-medium hover:text-primary transition-colors" href="allProducts.html">Shop All</a>
+<a class="text-[#1c0d0d] dark:text-white text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-[#1c0d0d] dark:text-white text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact </a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4">
+<label class="hidden sm:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full overflow-hidden border border-[#f4e7e7] dark:border-[#3d1a1a]">
+<div class="text-[#9c4949] flex bg-[#f4e7e7] dark:bg-[#3d1a1a] items-center justify-center px-3">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full border-none bg-[#f4e7e7] dark:bg-[#3d1a1a] focus:ring-0 text-[#1c0d0d] dark:text-white placeholder:text-[#9c4949] px-2 text-sm font-normal" placeholder="Find your gear..." value=""/>
+</div>
+</label>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-[#f4e7e7] dark:bg-[#3d1a1a] text-[#1c0d0d] dark:text-white hover:bg-primary/10 transition-colors">
+<a href="cart.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-[#f4e7e7] dark:bg-[#3d1a1a] text-[#1c0d0d] dark:text-white hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow max-w-[1440px] mx-auto w-full px-4 md:px-20 py-8">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap items-center gap-2 mb-6">
+<a class="text-[#9c4949] dark:text-[#cc7b7b] text-sm font-medium hover:text-primary" href="#">Home</a>
+<span class="text-[#9c4949] text-sm">/</span>
+<span class="text-[#1c0d0d] dark:text-white text-sm font-medium">All Products</span>
+</div>
+<!-- PageHeading -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-10">
+<div class="flex flex-col gap-2">
+<p class="text-[#1c0d0d] dark:text-white text-5xl font-black leading-tight tracking-tight">Gear Up &amp; Play</p>
+<p class="text-[#9c4949] dark:text-[#cc7b7b] text-lg font-normal max-w-xl">Professional-grade customizable sports gear designed for performance. Tailored by you, built for the podium.</p>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row gap-8">
+<!-- SideNavBar Filters -->
+<aside class="w-full lg:w-64 flex-shrink-0">
+<div class="sticky top-24 bg-white dark:bg-[#2d1616] rounded-xl border border-[#f4e7e7] dark:border-[#3d1a1a] p-6 shadow-sm">
+<div class="flex flex-col gap-8">
+<div>
+<h3 class="text-[#1c0d0d] dark:text-white text-sm font-bold uppercase tracking-widest mb-4">Categories</h3>
+<nav class="flex flex-col gap-2">
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined">check_circle</span>
+<p class="text-sm font-semibold">All Products</p>
+</div>
+<div class="group flex items-center justify-between px-3 py-2 rounded-lg hover:bg-[#f4e7e7] dark:hover:bg-[#3d1a1a] transition-all cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#9c4949]">apparel</span>
+<p class="text-[#1c0d0d] dark:text-white text-sm font-medium">Apparel</p>
+</div>
+<span class="text-xs text-[#9c4949]">24</span>
+</div>
+<div class="group flex items-center justify-between px-3 py-2 rounded-lg hover:bg-[#f4e7e7] dark:hover:bg-[#3d1a1a] transition-all cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#9c4949]">sports_soccer</span>
+<p class="text-[#1c0d0d] dark:text-white text-sm font-medium">Equipment</p>
+</div>
+<span class="text-xs text-[#9c4949]">18</span>
+</div>
+<div class="group flex items-center justify-between px-3 py-2 rounded-lg hover:bg-[#f4e7e7] dark:hover:bg-[#3d1a1a] transition-all cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#9c4949]">backpack</span>
+<p class="text-[#1c0d0d] dark:text-white text-sm font-medium">Accessories</p>
+</div>
+<span class="text-xs text-[#9c4949]">12</span>
+</div>
+</nav>
+</div>
+<div class="border-t border-[#f4e7e7] dark:border-[#3d1a1a] pt-6">
+<h3 class="text-[#1c0d0d] dark:text-white text-sm font-bold uppercase tracking-widest mb-4">Price Range</h3>
+<div class="flex flex-col gap-4">
+<input class="w-full accent-primary bg-[#f4e7e7] h-2 rounded-lg appearance-none cursor-pointer" type="range"/>
+<div class="flex justify-between text-xs font-medium text-[#9c4949]">
+<span>$0</span>
+<span>$500+</span>
+</div>
+</div>
+</div>
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-11 px-4 border border-primary text-primary hover:bg-primary hover:text-white transition-all text-sm font-bold">
+<span class="material-symbols-outlined text-[20px]">filter_alt_off</span>
+<span>Clear Filters</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- Product Content -->
+<div class="flex-grow">
+<!-- ToolBar -->
+<div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8 bg-white dark:bg-[#2d1616] p-4 rounded-xl border border-[#f4e7e7] dark:border-[#3d1a1a]">
+<p class="text-[#9c4949] dark:text-[#cc7b7b] text-sm font-medium">Showing 54 custom items</p>
+<div class="flex items-center gap-3">
+<div class="flex gap-1">
+<button class="p-2 rounded-lg bg-[#f4e7e7] dark:bg-[#3d1a1a] text-primary">
+<span class="material-symbols-outlined">grid_view</span>
+</button>
+<button class="p-2 rounded-lg text-[#9c4949] hover:bg-[#f4e7e7] dark:hover:bg-[#3d1a1a] transition-colors">
+<span class="material-symbols-outlined">view_list</span>
+</button>
+</div>
+<div class="h-6 w-px bg-[#f4e7e7] dark:bg-[#3d1a1a]"></div>
+<div class="relative">
+<select class="bg-transparent border-none focus:ring-0 text-[#1c0d0d] dark:text-white text-sm font-bold cursor-pointer pr-8">
+<option>Newest Arrivals</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Popularity</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- Product Card 1 -->
+<div class="group bg-white dark:bg-[#2d1616] rounded-xl overflow-hidden border border-[#f4e7e7] dark:border-[#3d1a1a] transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="relative aspect-square overflow-hidden bg-[#f4e7e7] dark:bg-[#3d1a1a]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Red custom performance running shoe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn2ptd-qJnVBSl3__F4ZWIGF9ErPgcEPQ88wRZ1Tl3EEQ_rotZwZO5rYd-_dSw-SPVD9yvFUA8n7Wpb4VdYOJQUisu5lLp-lCdngKkrzC8qLWXFYv86EJp1UjnUmayHTmH4eER4D5-B6y5s4c8ZMCnnQI4uMglnGZu_dzHhsJ-i6ICOiKpKhPaYvmm7Cf2_bQzUbJhP97P8kjjI7czXl_F7hQNEbNlc-TiyhJ5Jd5IX1_A1gA3Lotp7GX3rTbgK6NHaff49WLrzoiO"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-black uppercase tracking-wider px-2 py-1 rounded">Bestseller</span>
+</div>
+<button class="absolute top-4 right-4 h-10 w-10 bg-white/90 dark:bg-black/50 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[#1c0d0d] dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors">Apex Pro Runner</h3>
+<span class="text-primary font-black text-lg">$129</span>
+</div>
+<p class="text-[#9c4949] dark:text-[#cc7b7b] text-sm mb-6 line-clamp-2">Fully breathable mesh upper with adaptive fit technology for elite athletes.</p>
+<button class="w-full bg-primary text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-[#d00a0a] transition-all">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+                                    Customise Now
+                                </button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group bg-white dark:bg-[#2d1616] rounded-xl overflow-hidden border border-[#f4e7e7] dark:border-[#3d1a1a] transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="relative aspect-square overflow-hidden bg-[#f4e7e7] dark:bg-[#3d1a1a]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Black sleek gym compression shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7C-8ryeNXWv5OrDmWwqot-9yMpN8c_atdm8qXtXQ01cHTfHpqc7sqw1NQH8KE42Re5R38mx0pc44Njfsm9zhArHrvEjvtfz8H-n0fQrmMmxIodSeqDnZ8PE9vdpnG4enjOYYKvvy9np26SPm1P46Ogyu83D_H8qOOnGiwXTZqW9iEivyw_OMX7vBQH4V1FkJPCFguu7FYqDm42cyn6-gAkMlyvWcGx-0-lQKTb-Mdw5vp_SpwfNPieKlPycngJJt_wuAqotS9qNgt"/>
+<div class="absolute top-4 left-4">
+<span class="bg-[#1c0d0d] text-white text-[10px] font-black uppercase tracking-wider px-2 py-1 rounded">New</span>
+</div>
+<button class="absolute top-4 right-4 h-10 w-10 bg-white/90 dark:bg-black/50 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[#1c0d0d] dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors">Titan Compression Tee</h3>
+<span class="text-primary font-black text-lg">$45</span>
+</div>
+<p class="text-[#9c4949] dark:text-[#cc7b7b] text-sm mb-6 line-clamp-2">Moisture-wicking fabric with reinforced stitching for high-intensity training sessions.</p>
+<button class="w-full bg-primary text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-[#d00a0a] transition-all">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+                                    Customise Now
+                                </button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group bg-white dark:bg-[#2d1616] rounded-xl overflow-hidden border border-[#f4e7e7] dark:border-[#3d1a1a] transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="relative aspect-square overflow-hidden bg-[#f4e7e7] dark:bg-[#3d1a1a]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Professional custom basketball" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp-L_nbZmybxyJGPRyVEpVcIKRiG7gyDdIGAvLolTWd5xKF3GD003btTR660rGJ1kcy5i4-S9hU5bk8bE8TRF8xXLX5YZ3ZTPL9JAmpXBFRDqbV8_VgqFh0hSOGR4nuTV_xOa6EuHtOgkpXDfKaIlPGMX-CvFYrjMU5TACRIyqMVKLn8hF5GoG5gUzYoFQLjXrspXiVmOmOgGzzu9auIWfRquAn1LnNf1-j6vjSh6vnMAp-dWdRWKbTPfTEu9vgbH_sfhrGPgTutgN"/>
+<button class="absolute top-4 right-4 h-10 w-10 bg-white/90 dark:bg-black/50 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[#1c0d0d] dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors">Elite Grip Basketball</h3>
+<span class="text-primary font-black text-lg">$89</span>
+</div>
+<p class="text-[#9c4949] dark:text-[#cc7b7b] text-sm mb-6 line-clamp-2">Premium synthetic leather with deep channels for ultimate control and custom engraving.</p>
+<button class="w-full bg-primary text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-[#d00a0a] transition-all">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+                                    Customise Now
+                                </button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group bg-white dark:bg-[#2d1616] rounded-xl overflow-hidden border border-[#f4e7e7] dark:border-[#3d1a1a] transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="relative aspect-square overflow-hidden bg-[#f4e7e7] dark:bg-[#3d1a1a]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Set of custom yoga mats" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrHvXLtrW0W6FcAu6MMQ4XUEBbAw6Acrbrm0RwNeHqtzY9qwRBi444af_qTn8hIAJIicikdH3SqbaNPpFn6G_Pk_2uTIbNnxVekrZLs1YuRHSrv1Sa5WxBj5UOLquCh_Bh-FwWJTmYx6JJFcSaoVkO-yJ3HnChWfVWjipTlY1Tgh5nh7RG9j1wNaSzauY6s11n8XJdVycMZXItvHZzSH3B3GTM2lvbmvTFtxGpTyX6X1EbOBhEKWiRMXlc9MMSXXPLhszJgnZnwDNu"/>
+<button class="absolute top-4 right-4 h-10 w-10 bg-white/90 dark:bg-black/50 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[#1c0d0d] dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors">Zenith Yoga Mat</h3>
+<span class="text-primary font-black text-lg">$65</span>
+</div>
+<p class="text-[#9c4949] dark:text-[#cc7b7b] text-sm mb-6 line-clamp-2">Eco-friendly non-slip surface available in 15 different custom patterns and colors.</p>
+<button class="w-full bg-primary text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-[#d00a0a] transition-all">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+                                    Customise Now
+                                </button>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group bg-white dark:bg-[#2d1616] rounded-xl overflow-hidden border border-[#f4e7e7] dark:border-[#3d1a1a] transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="relative aspect-square overflow-hidden bg-[#f4e7e7] dark:bg-[#3d1a1a]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern soccer cleats" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_z0Os8K0858nxJUWddJqLF6nqTOZwXHWe4cDht2jIYBP8AsE-ILB3knKdx24ppysazDYs1b2vFchpsPDWAttMhExkQEGsC9EktvpdB38oRHaexkZZOgxoN2Kv7ngO3v32dqeZvNsfRc78nJJ4rgYa38_-z6gb7quxJkojVLNHwfVa6bKsr8GrIHQbVlpLGdlia8Kw6dDytt0QP_sAi3oVmJgyNp3xM_FHDgNmESLGYw-CcFszKHkogbKqRGQAnc8pUoRXETH6tY38"/>
+<button class="absolute top-4 right-4 h-10 w-10 bg-white/90 dark:bg-black/50 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[#1c0d0d] dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors">Viper Strike Cleats</h3>
+<span class="text-primary font-black text-lg">$199</span>
+</div>
+<p class="text-[#9c4949] dark:text-[#cc7b7b] text-sm mb-6 line-clamp-2">Unmatched traction and touch. Customizable stud configuration and colorway.</p>
+<button class="w-full bg-primary text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-[#d00a0a] transition-all">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+                                    Customise Now
+                                </button>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group bg-white dark:bg-[#2d1616] rounded-xl overflow-hidden border border-[#f4e7e7] dark:border-[#3d1a1a] transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="relative aspect-square overflow-hidden bg-[#f4e7e7] dark:bg-[#3d1a1a]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Custom fitness dumbbells" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbsvhX08xPY9tk4iU6iiLPL7_szQBxlCylNynGGvxTczNJZhlVdnP-gfShzWkK4vm0kA7cxXX78M6PmKBzSZ8uQ7_4AshlRec47cjaMEaCUn41kw8UnCIgOrvp1dXyXkf8WUwiT4vzeidBdxWNbI8kXM05l0tvjIzTCo_uQZHoKCqy2LURyvYnjoirf2nqlav2RlYzqQ2DIDPRKj-OYBf1QEQTTVB01EfD9Pkzmopij_D67vWlXd4jXo_My8EPlqwiSeIz72beHdVS"/>
+<button class="absolute top-4 right-4 h-10 w-10 bg-white/90 dark:bg-black/50 backdrop-blur rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[#1c0d0d] dark:text-white font-bold text-lg leading-tight group-hover:text-primary transition-colors">Core Iron Dumbbells</h3>
+<span class="text-primary font-black text-lg">$55</span>
+</div>
+<p class="text-[#9c4949] dark:text-[#cc7b7b] text-sm mb-6 line-clamp-2">Heavy-duty cast iron with customizable rubber coating color and weight markings.</p>
+<button class="w-full bg-primary text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-[#d00a0a] transition-all">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+                                    Customise Now
+                                </button>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-16 flex flex-col items-center gap-6">
+<button class="px-10 py-4 bg-[#1c0d0d] dark:bg-white text-white dark:text-[#1c0d0d] rounded-full font-bold hover:bg-primary dark:hover:bg-primary dark:hover:text-white transition-all flex items-center gap-2 group">
+                            Load More Gear
+                            <span class="material-symbols-outlined group-hover:translate-y-1 transition-transform">expand_more</span>
+</button>
+<div class="flex gap-2">
+<button class="size-10 rounded-lg flex items-center justify-center bg-primary text-white font-bold">1</button>
+<button class="size-10 rounded-lg flex items-center justify-center bg-white dark:bg-[#2d1616] text-[#1c0d0d] dark:text-white font-bold hover:bg-[#f4e7e7] dark:hover:bg-[#3d1a1a]">2</button>
+<button class="size-10 rounded-lg flex items-center justify-center bg-white dark:bg-[#2d1616] text-[#1c0d0d] dark:text-white font-bold hover:bg-[#f4e7e7] dark:hover:bg-[#3d1a1a]">3</button>
+<span class="size-10 flex items-center justify-center text-[#9c4949]">...</span>
+<button class="size-10 rounded-lg flex items-center justify-center bg-white dark:bg-[#2d1616] text-[#1c0d0d] dark:text-white font-bold hover:bg-[#f4e7e7] dark:hover:bg-[#3d1a1a]">12</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Footer -->
+<footer class="bg-white dark:bg-[#1a0c0c] border-t border-[#f4e7e7] dark:border-[#3d1a1a] mt-20 py-12">
+<div class="max-w-[1440px] mx-auto px-4 md:px-20 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 text-primary mb-6">
+<div class="size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-[#1c0d0d] dark:text-white text-lg font-black uppercase tracking-tight">Aphrodite</h2>
+</div>
+<p class="text-[#9c4949] dark:text-[#cc7b7b] text-sm leading-relaxed">The ultimate destination for premium, customizable sports gear. Push your limits with style.</p>
+</div>
+<div>
+<h4 class="text-[#1c0d0d] dark:text-white font-bold text-sm uppercase mb-6">Support</h4>
+<ul class="flex flex-col gap-4 text-sm text-[#9c4949] dark:text-[#cc7b7b]">
+<li><a class="hover:text-primary transition-colors" href="#">Shipping Info</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Returns</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Customization Guide</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#1c0d0d] dark:text-white font-bold text-sm uppercase mb-6">Community</h4>
+<ul class="flex flex-col gap-4 text-sm text-[#9c4949] dark:text-[#cc7b7b]">
+<li><a class="hover:text-primary transition-colors" href="#">Aphrodite Pro Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Affiliate Program</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Events</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#1c0d0d] dark:text-white font-bold text-sm uppercase mb-6">Join the Elite</h4>
+<p class="text-[#9c4949] dark:text-[#cc7b7b] text-sm mb-4">Get the latest drops and customization tips.</p>
+<div class="flex rounded-lg overflow-hidden border border-[#f4e7e7] dark:border-[#3d1a1a]">
+<input class="flex-grow bg-[#f4e7e7] dark:bg-[#3d1a1a] border-none text-sm px-4 focus:ring-0" placeholder="Email" type="email"/>
+<button class="bg-primary text-white px-4 py-2 text-sm font-bold">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto px-4 md:px-20 mt-12 pt-8 border-t border-[#f4e7e7] dark:border-[#3d1a1a] flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[#9c4949] text-xs">© 2024 Aphrodite Customisation. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-[#9c4949] hover:text-primary" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a>
+<a class="text-[#9c4949] hover:text-primary" href="#"><span class="material-symbols-outlined text-[20px]">alternate_email</span></a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

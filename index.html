@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Aphrodite Customisation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f20d0d",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Lexend', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#1c0d0d] dark:text-[#fcf8f8] transition-colors duration-300">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-solid border-[#f4e7e7] dark:border-[#3d1a1a] px-4 md:px-20 py-3">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between gap-8">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-8">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-[#1c0d0d] dark:text-white text-xl font-black leading-tight tracking-tight uppercase">Aphrodite</h2>
+</div>
+
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<label class="hidden lg:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-[#9c4949] dark:text-[#f4e7e7] flex border-none bg-[#f4e7e7] dark:bg-[#3a2020] items-center justify-center pl-4 rounded-l-lg">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#1c0d0d] dark:text-[#fcf8f8] focus:outline-0 focus:ring-0 border-none bg-[#f4e7e7] dark:bg-[#3a2020] h-full placeholder:text-[#9c4949] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal" placeholder="Search" value=""/>
+</div>
+</label>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold tracking-[0.015em] hover:brightness-110 transition-all">
+<a href="about.html"><span class="truncate">Get Started</span></a>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary" data-alt="User avatar profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCefbkpgVIMMO6hWWte35SILLKujfmALtkp9fhvly5QeZuq9vi2nEiVTN_k9kWcruiU3mAdWPq23hPJJESjbsB2fCG-hWr8K_g56V8oAezt7fCCdvtU7Ld_nY0Fbn-EoZox028SOAm3e8CXPzcDypAPWf1hCrGZgd0d_wviDaNzclKZ9qN-a-_XHKLkQJzLpoyAVOQhzygxLqTzly9LGf-93fKwB6Ms2JvDrWIHZAvf1u2YlkL-6zU48liMDFE1avBVeFo3rDzXg6m6");'></div>
+</div>
+</header>
+<main class="flex flex-col items-center">
+<!-- Hero Section -->
+<section class="w-full max-w-[1200px] px-4 py-8 md:py-12">
+<div class="@container">
+<div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-8 text-center relative overflow-hidden" data-alt="Dynamic athlete wearing custom red and black performance gear" style='background-image: linear-gradient(rgba(34, 16, 16, 0.7) 0%, rgba(34, 16, 16, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXECUih8EnKDHqAoqiZRBhOOty5GncvIIaGOzEcNdYv-PsxGfEULwEgwFFCY3L_aEqWgduKyWeS2fsHdodCz0fs34PPZCyN-uXW_a6d3WSjJn7O5MbIk8eu5ElIdyumvimF1LmnP8DyDHca2Gd6Ek5ZkmHCEw13t8Hwxf0p33hvU9tUzb_K64LWd--w3uUmPZciMaypdP32_uYbJEBbvKPANuiMJCsxXVifDeUnkAWUVxpjeI1cQiclOiN1zZdiDVonLs57AzsMO_g");'>
+<div class="z-10 flex flex-col gap-4 max-w-[800px]">
+<h1 class="text-white text-5xl font-black leading-tight tracking-tight md:text-7xl">
+                                    Wear Your <span class="text-primary italic">Identity</span>
+</h1>
+<p class="text-white/90 text-lg md:text-xl font-light leading-relaxed">
+                                    Aphrodite Customisation bridges the gap between professional-grade gear and personal expression. We empower athletes to perform with precision and unmatched style.
+                                </p>
+</div>
+<div class="z-10 mt-4">
+    <a href="about.html">
+<button class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-lg font-bold hover:scale-105 transition-transform">
+                                    Start Designing
+                                </button></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story & Mission Section -->
+<section class="w-full max-w-[960px] py-12 px-6">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h2 class="text-primary text-sm font-bold uppercase tracking-widest mb-2">The Mission</h2>
+<h3 class="text-3xl md:text-4xl font-extrabold leading-tight mb-6">Redefining Performance Apparel</h3>
+<p class="text-base md:text-lg opacity-80 leading-loose mb-6">
+                                Born from the pursuit of absolute performance, Aphrodite Customisation is dedicated to providing high-quality, personalised sports apparel that stands the test of time and intensity. We believe every athlete has a unique story, and their gear should tell it.
+                            </p>
+<p class="text-base md:text-lg opacity-80 leading-loose">
+                                Our goal is to democratize elite-level customization. What was once reserved for the pros is now accessible to every dedicated individual and team.
+                            </p>
+</div>
+<div class="flex-1 relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl"></div>
+<div class="relative rounded-xl overflow-hidden shadow-2xl border-4 border-white dark:border-[#3a2020]">
+<img alt="Athlete preparing gear" class="w-full h-auto" data-alt="Athlete preparing their custom gear for training" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVG6_MEl7PLNn1liBJdpSJrpsSm0fo1rmWSOYuQXXS9alEJCLgyyFeL-OaU1DjAjHdvMkpPmrqULpSPSsBN4mGOMWPINLIedpjKFFC9zZwt3JIshTorHLQil6uccFcM6tAlFXogNS5hlDSY_MirhtumTobkzao-BRRllrYDPiAWsrWWAp_0D52KJqmZj807uWNm3EDyHV70IEoK0Irjg1NVR_nryhu8YiAkePBR7yyg8oLymp3cpZPysLuacpdV97vndPoO_X2P9Pg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Process Section -->
+<section class="w-full bg-primary/5 dark:bg-primary/10 py-20 px-6 mt-12">
+<div class="max-w-[1200px] mx-auto text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Our Elite Process</h2>
+<p class="max-w-2xl mx-auto opacity-70">From the first sketch to the final sprint, our process ensures excellence in every fiber.</p>
+</div>
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-primary/20 shadow-lg group hover:bg-primary hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6">draw</span>
+<h4 class="text-xl font-bold mb-3">1. Design</h4>
+<p class="opacity-80 group-hover:opacity-100">Use our intuitive 3D interface to visualize your identity. Choose colors, upload logos, and define your style.</p>
+</div>
+<div class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-primary/20 shadow-lg group hover:bg-primary hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6">precision_manufacturing</span>
+<h4 class="text-xl font-bold mb-3">2. Craft</h4>
+<p class="opacity-80 group-hover:opacity-100">We utilize aerospace-grade stitching and sweat-wicking tech to manufacture your gear to exact specifications.</p>
+</div>
+<div class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-primary/20 shadow-lg group hover:bg-primary hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-5xl mb-6">bolt</span>
+<h4 class="text-xl font-bold mb-3">3. Deliver</h4>
+<p class="opacity-80 group-hover:opacity-100">Global logistics ensures your custom armor arrives at your doorstep, ready for game day or the gym.</p>
+</div>
+</div>
+</section>
+<!-- Quality Guarantee Section -->
+<section class="w-full max-w-[1200px] py-24 px-6">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2 grid grid-cols-2 gap-4">
+<img class="rounded-lg shadow-md" data-alt="Close up of high quality sports fabric texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl2ohd3lZi9FXQ5PShzVljqx_zNl-dubhs1dBoSQUIaNwkPdExEKhNW19xfRW_red2YuDlhJGqOve-x_E8FbrxjmzWvb-cP7PZ8xfr-UYh_NYImjVxvCjFrg4mkbIsX-ZkAW_gdhZzFhfmQ_UBWo4SA17knvZYnvr9MC940aWZgtGPQu9KURGJITHL6lvK373bgyvWOOABUptLqJnr2d9IQVVWiG802_EQez8e9lfYn2GG3d6lSW1qMZ7d2-aTkvuwPCIzViOAOYVJ"/>
+<img class="rounded-lg shadow-md mt-8" data-alt="Precision stitching on athletic wear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy2XaWmrLhn7NTdiTxuafAi8mNWU8aWuhJY5Hkq66-EFhugIvTn6XagUkRuGvQQpV9Xqyu9oRGSp8BsZZfrXs89teH7Ywo5KLWP4PwxAkBNMS6hzBlc6eLeIPi8vXq4y91Pk_No7117N6yodnj60NWvLWHddFUpbneIpfYqbLaCAKNWm4GcaNqWLGWyo0Cvo_EZkibtsOh4DGiyFiskOWa-ytl7TvGBfTpdOorKMJ-RCDqlu77mcv1JunAv7KvwO-s8uwINq91D8st"/>
+</div>
+<div class="lg:w-1/2">
+<h2 class="text-3xl font-bold mb-6">Quality Guarantee</h2>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="bg-primary/20 p-2 rounded-full mt-1">
+<span class="material-symbols-outlined text-primary">verified</span>
+</div>
+<div>
+<h5 class="font-bold text-lg">Stress-Tested Fabrics</h5>
+<p class="opacity-70">Every batch of material undergoes 1,000+ hours of elasticity and friction testing.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-primary/20 p-2 rounded-full mt-1">
+<span class="material-symbols-outlined text-primary">colors</span>
+</div>
+<div>
+<h5 class="font-bold text-lg">Zero-Fade Sublimation</h5>
+<p class="opacity-70">Our colors are bonded at a molecular level, ensuring they stay vibrant through every wash.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-primary/20 p-2 rounded-full mt-1">
+<span class="material-symbols-outlined text-primary">shield</span>
+</div>
+<div>
+<h5 class="font-bold text-lg">Elite Warranty</h5>
+<p class="opacity-70">A 1-year performance guarantee on all stitching and structural integrity.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team / Founders Section -->
+<section class="w-full max-w-[960px] py-16 px-6">
+<h2 class="text-2xl font-bold mb-10 text-center">Built by Athletes, for Athletes</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center group">
+<div class="relative inline-block mb-4 overflow-hidden rounded-xl">
+<img alt="Team member" class="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="Portrait of team member" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp2xWPjAF-ihKRkgIo0zpuawGaDQGjeqFQ73S-nyOQBk0ktMzL_34-rUCHqt8-6Ff-hw2cBgOKuKiOl2Gh8GgOlMlTmp0giAz-IB1uBIfMGkMf4i50ulFc4Nas-0jVKhaOcpvyBWtROjuvIGIrWnb3J50sbcb41FaL3dB5oEf-YAcDOzXiQ256BD7u6vO_FRrqg2LC--hEUYeuksj1Cwev-0MbUJY0RGJPyIYc3UliJYu1hwFF3Mt8yibB0cBgB2C-hD58E0CQuTGs"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h6 class="font-bold">Marcus Chen</h6>
+<p class="text-xs uppercase text-primary font-bold tracking-widest">Founder / CEO</p>
+</div>
+<div class="text-center group">
+<div class="relative inline-block mb-4 overflow-hidden rounded-xl">
+<img alt="Team member" class="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="Portrait of team member" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUWAvX06PmCJZtMfW9TvlgawHFbfmF16GrNJ3nzLPMbEWaPpZHTw4yF0HDXs5tcXFd2gov64gDxSMm5_qTk_123JYbgUrs7LtuLSvmW9j2iZmmvL9giG85U9Uvjjhw9abApdbn2mHPJN7qrbKihwRN5KlK-GBwtzFKPVnwXaGvoMqE_Vf1Dbr3yjwR58huBKT4T1kC4FDzYf8sWKUb_zyWxN76ightrxfN8CeMqWa_S0kXlevYKMvIfc13LNixlhwgVs5lC6RpWqVX"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h6 class="font-bold">Sarah Williams</h6>
+<p class="text-xs uppercase text-primary font-bold tracking-widest">Head of Design</p>
+</div>
+<div class="text-center group">
+<div class="relative inline-block mb-4 overflow-hidden rounded-xl">
+<img alt="Team member" class="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="Portrait of team member" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwEHmqWbARxHHwbt-fdJVKyh0wp53VIQrUPwWCfmWhw4eeNph2BQehNIMS7QdNRx7wfg5B7SiUCqJ3_DbgPy-_yxo_DFrY_Ly-ml4SNGKHwxq5hq_e9kT0Nl2XAMng9ea7wSgLGETJBSEoq5pY9SHIqJDd34uhDGvxn3MMlufdfVM64uK9nWs5LRabP-MEVbepG4YKLNGkSjg4Egre_LOOR0SwDcqIepMXOi6EiFRUa6XA-VJaH8pmtuGV2kpIiFAcF5Bb_k2KUNbq"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h6 class="font-bold">David Okafor</h6>
+<p class="text-xs uppercase text-primary font-bold tracking-widest">Production Lead</p>
+</div>
+<div class="text-center group">
+<div class="relative inline-block mb-4 overflow-hidden rounded-xl">
+<img alt="Team member" class="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="Portrait of team member" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByIf1ss2Ju3CIcJijcIAm4nKqr8sYWeQFB0LiQCQSdWR9Hazxxz4abI0f7LEV3E8JcJdfeLilaaAuL0zqHGF5_lXcS1xVtEHGB6je8PFL3Jb9aagnmd5JYiIrCyhqHz6szkiQHazV6B6cTuOxKIIAlC5jt2dVa_6bfcDg-rhhsBFLpEls1R6FgFU4LyvhozDGQryxhiFiYbDM-59ZhH79WDjyA3kmlLqXKLWbVGPkbBN3N6jmkAVqz1mvPnSwipjQUdefGjPVtXU6T"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h6 class="font-bold">Elena Rossi</h6>
+<p class="text-xs uppercase text-primary font-bold tracking-widest">Athlete Success</p>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="w-full px-6 py-12 mb-20">
+<div class="max-w-[1200px] mx-auto bg-primary rounded-2xl p-12 text-center text-white flex flex-col items-center shadow-2xl overflow-hidden relative">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-black/20 rounded-full -ml-24 -mb-24"></div>
+<h2 class="text-3xl md:text-5xl font-black mb-6 z-10">Ready to Build Your Legacy?</h2>
+<p class="text-lg opacity-90 mb-8 max-w-xl z-10">Join over 10,000 athletes who have chosen Aphrodite for their custom performance needs.</p>
+<a href="about.html"><button class="bg-white text-primary px-10 py-4 rounded-lg font-bold text-xl hover:bg-background-light transition-colors z-10 shadow-lg">
+                            Get Started Now
+                        </button></a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#f4e7e7] dark:border-[#3a2020] px-10 py-12 bg-background-light dark:bg-background-dark">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-4 text-primary mb-6">
+<div class="size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold">Aphrodite Customisation</h2>
+</div>
+<p class="max-w-md opacity-70">
+                            The future of sports apparel is personal. We're here to make sure you look as good as you play. High-performance, custom-crafted, athlete-approved.
+                        </p>
+</div>
+<div>
+<h6 class="font-bold mb-6">Quick Links</h6>
+<ul class="space-y-4 text-sm opacity-70">
+<li><a class="hover:text-primary" href="#">Custom Gear</a></li>
+<li><a class="hover:text-primary" href="#">Bulk Orders</a></li>
+<li><a class="hover:text-primary" href="#">Size Guide</a></li>
+<li><a class="hover:text-primary" href="#">Shipping &amp; Returns</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-bold mb-6">Connect</h6>
+<div class="flex gap-4">
+<a class="size-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<a class="size-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</a>
+<a class="size-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto border-t border-[#f4e7e7] dark:border-[#3a2020] mt-12 pt-8 text-xs opacity-50 flex justify-between">
+<p>© 2026 Aphrodite Customisation. All rights reserved.</p>
+<div class="flex gap-4">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

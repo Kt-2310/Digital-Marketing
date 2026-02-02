@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aphrodite Custom Jersey | Product Page</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f20d0d",
+                        "background-light": "#f8f5f5",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#1c0d0d] dark:text-white transition-colors duration-200">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-solid border-[#f4e7e7] dark:border-[#3d1a1a] px-4 md:px-20 py-3">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between gap-8">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-8">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-[#1c0d0d] dark:text-white text-xl font-black leading-tight tracking-tight uppercase">Aphrodite</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-9">
+<a class="text-[#1c0d0d] dark:text-white text-sm font-medium hover:text-primary transition-colors" href="allProducts.html">Shop All</a>
+<a class="text-[#1c0d0d] dark:text-white text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-[#1c0d0d] dark:text-white text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact </a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<label class="hidden lg:flex items-stretch h-10 w-64">
+<div class="text-[#9c4949] flex bg-[#f4e7e7] dark:bg-[#3d2020] items-center justify-center pl-4 rounded-l-lg">
+<span class="material-symbols-outlined text-sm">search</span>
+</div>
+<input class="w-full rounded-r-lg text-sm border-none bg-[#f4e7e7] dark:bg-[#3d2020] focus:ring-1 focus:ring-primary placeholder:text-[#9c4949] px-4 pl-2" placeholder="Find your gear..."/>
+</label>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-[#f4e7e7] dark:bg-[#3d2020] hover:bg-primary/20 transition-colors">
+<a href="cart.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-[#f4e7e7] dark:bg-[#3d2020] hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto px-4 py-6">
+<!-- Breadcrumbs -->
+<nav class="flex flex-wrap gap-2 py-4 mb-4 items-center">
+<a class="text-[#9c4949] dark:text-[#cc7a7a] text-sm font-medium hover:underline" href="#">Home</a>
+<span class="text-[#9c4949] text-sm">/</span>
+<a class="text-[#9c4949] dark:text-[#cc7a7a] text-sm font-medium hover:underline" href="#">Custom Jerseys</a>
+<span class="text-[#9c4949] text-sm">/</span>
+<span class="text-sm font-medium opacity-70">Pro-Performance Jersey</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- Left Side: Visuals -->
+<div class="lg:col-span-7 space-y-4">
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden bg-white dark:bg-[#3d2020] shadow-sm">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover" data-alt="Professional sports jersey front view on mannequin" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB4x-x-ArMOif590MPkP-ZxmeT4XxGC9Q_7gAGxJx-qZfj2oP6rKafTZGyDF2YLvDv51mBJZ5ITqpsSCYt_iKaeq4IejOy0DHXudLlp5AxzZQqmIqtuiTZh0EbRUgjEG42Nxnw0nAEo8XpiB8WtzJ7XzfyOBLtQD698mx1KDIj0VwydBWnE8oUGT2EVrZPFs406WHGWgop1ieff7uGux5U4mJt8TIbS-1xP8nI1ewvKMnpMO_brRGOxIcRRMrfQib1xq40XpIj5KPQF");'>
+</div>
+<!-- Mockup Preview Text (Absolute overlay) -->
+<div class="absolute top-[35%] left-0 w-full text-center pointer-events-none">
+<p class="text-white font-black text-4xl uppercase tracking-widest drop-shadow-lg opacity-80">YOUR NAME</p>
+<p class="text-white font-black text-9xl drop-shadow-xl opacity-90">00</p>
+</div>
+</div>
+<!-- Thumbnails -->
+<div class="flex gap-4">
+<div class="size-20 rounded-lg border-2 border-primary overflow-hidden cursor-pointer bg-white dark:bg-[#3d2020]">
+<div class="w-full h-full bg-cover" data-alt="Jersey front preview" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsGN8JQceRrPiv3ao3fAi5b-T7-AJmUnMOPfKqSSweYwtWol6QFv7r2gGksrOzbKFyfhlWrsZwjHYm_JUuvaehAbzdUTKLF7W7Zf5GzzAyWhiHG16UBF_MwqIre65y7xmy_Vq6QpzctavsgQRcgwKeKkV0D5lfPFBVwx4qpBl6OiG1XMyOEgzVAzdSX8M38NHEFSYK-mID5rksq7hGv3mcltFKz1FJ0l1ATIm7juO7jipsiF-cSBNek9EosxTmEJxwoXDkVTeteYwV");'></div>
+</div>
+<div class="size-20 rounded-lg border border-transparent hover:border-[#e8cece] overflow-hidden cursor-pointer bg-white dark:bg-[#3d2020]">
+<div class="w-full h-full bg-cover opacity-60" data-alt="Jersey back preview" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA1uhN3KKZaT-QDtLQJSRHA8bWTyu_ZVeNcn3Q5Ft3iuOa4MT3EdpgbpgMY7EMhkZYdbQ12sG8wG8ALatG8ScxA937I9AR77_bAcGpPnKcNyKlmmlcpz7eEiT8QNU_CKsV_uKtgtYH8rZNFxvJ12L8ywksm9c98EHliSGEbIf-bLN6b23Xna25gTbJC3KPfMEqqDXENKuv4nUz29bDUSm9ekhTV9VnqCyvMcKXzGvn3VFH-3Y4UEoRdIgn9HdFnVxwdU4niBj4naU4U");'></div>
+</div>
+<div class="size-20 rounded-lg border border-transparent hover:border-[#e8cece] overflow-hidden cursor-pointer bg-white dark:bg-[#3d2020]">
+<div class="w-full h-full bg-cover opacity-60" data-alt="Jersey fabric texture detail" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCvPirpadh5CV7Xj3AGUnxtZ0Q-q-DtPl9whQI5I2NkDoHonjA20kByulLZ8ohdw_3pS64Di51DgoMNZYglSd7xZHj1T1pTe2CbSv0uCFYllkLeBWgeraApztczNpLmhgV2iLRHgCLQiQZrRmyTXHOfkdi2Js-Wcd9zzksWkQu7mKq6GSY9CQhLskcWVOSQuYczGZiI8RvZM21LM4H9Q_BAp2nYYhxeqW44T_LqgPQin9zjEBsxxYh4nVUQ0BRtA1nAEhMrgORZu7Zl");'></div>
+</div>
+</div>
+</div>
+<!-- Right Side: Customization Form -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Product Heading -->
+<div class="space-y-2">
+<h1 class="text-4xl font-black leading-tight tracking-tight">Aphrodite Pro-Performance Jersey</h1>
+<div class="flex items-center gap-4">
+<p class="text-2xl font-bold text-primary">$59.99</p>
+<span class="px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-bold rounded">IN STOCK</span>
+</div>
+<!-- Rating Summary -->
+<div class="flex items-center gap-2">
+<div class="flex text-primary">
+<span class="material-symbols-outlined fill-icon text-sm">star</span>
+<span class="material-symbols-outlined fill-icon text-sm">star</span>
+<span class="material-symbols-outlined fill-icon text-sm">star</span>
+<span class="material-symbols-outlined fill-icon text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-sm text-[#9c4949] dark:text-[#cc7a7a]">(124 reviews)</p>
+<span class="mx-2 text-gray-300">|</span>
+<p class="text-xs font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+                            200+ customized this month
+                        </p>
+</div>
+</div>
+<!-- Customization Fields -->
+<div class="p-6 bg-white dark:bg-[#2d1a1a] rounded-xl shadow-sm border border-[#e8cece] dark:border-[#3d2020] space-y-6">
+<h3 class="text-lg font-bold">Personalize Your Gear</h3>
+<div class="grid grid-cols-3 gap-4">
+<div class="col-span-2">
+<label class="block text-xs font-bold uppercase mb-2 text-[#9c4949] dark:text-[#cc7a7a]">Jersey Name</label>
+<input class="w-full h-11 bg-background-light dark:bg-background-dark border-none rounded-lg focus:ring-2 focus:ring-primary uppercase font-bold text-lg px-4" placeholder="e.g. JORDAN" type="text"/>
+</div>
+<div class="col-span-1">
+<label class="block text-xs font-bold uppercase mb-2 text-[#9c4949] dark:text-[#cc7a7a]">Number</label>
+<input class="w-full h-11 bg-background-light dark:bg-background-dark border-none rounded-lg focus:ring-2 focus:ring-primary font-bold text-lg px-4" placeholder="23" type="number"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase mb-3 text-[#9c4949] dark:text-[#cc7a7a]">Base Color</label>
+<div class="flex gap-3">
+<button class="size-8 rounded-full bg-primary border-4 border-white dark:border-[#2d1a1a] ring-2 ring-primary"></button>
+<button class="size-8 rounded-full bg-black border-2 border-transparent hover:ring-2 hover:ring-black"></button>
+<button class="size-8 rounded-full bg-blue-700 border-2 border-transparent hover:ring-2 hover:ring-blue-700"></button>
+<button class="size-8 rounded-full bg-white border border-gray-300 hover:ring-2 hover:ring-gray-300"></button>
+<button class="size-8 rounded-full bg-gray-500 border-2 border-transparent hover:ring-2 hover:ring-gray-500"></button>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase mb-2 text-[#9c4949] dark:text-[#cc7a7a]">Add Team Logo</label>
+<button class="w-full border-2 border-dashed border-[#e8cece] dark:border-[#3d2020] py-6 rounded-lg flex flex-col items-center justify-center gap-2 hover:bg-background-light dark:hover:bg-background-dark transition-colors group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">upload_file</span>
+<span class="text-sm font-medium">Click to upload .SVG or .PNG</span>
+</button>
+</div>
+<div>
+<div class="flex justify-between items-center mb-2">
+<label class="text-xs font-bold uppercase text-[#9c4949] dark:text-[#cc7a7a]">Select Size</label>
+<a class="text-[10px] font-bold underline uppercase text-primary" href="#">Size Guide</a>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="h-10 border border-[#e8cece] dark:border-[#3d2020] rounded-lg font-bold text-sm hover:border-primary">S</button>
+<button class="h-10 border border-[#e8cece] dark:border-[#3d2020] rounded-lg font-bold text-sm hover:border-primary">M</button>
+<button class="h-10 border-2 border-primary bg-primary/10 rounded-lg font-bold text-sm">L</button>
+<button class="h-10 border border-[#e8cece] dark:border-[#3d2020] rounded-lg font-bold text-sm hover:border-primary">XL</button>
+</div>
+</div>
+<div class="flex items-end gap-4">
+<div class="w-32">
+<label class="block text-xs font-bold uppercase mb-2 text-[#9c4949] dark:text-[#cc7a7a]">Qty</label>
+<div class="flex h-11 bg-background-light dark:bg-background-dark rounded-lg items-center px-1">
+<button class="flex-1 flex justify-center items-center hover:text-primary"><span class="material-symbols-outlined text-base">remove</span></button>
+<input class="w-8 text-center bg-transparent border-none font-bold p-0" type="text" value="1"/>
+<button class="flex-1 flex justify-center items-center hover:text-primary"><span class="material-symbols-outlined text-base">add</span></button>
+</div>
+</div>
+<button class="flex-1 h-11 bg-primary text-white font-bold rounded-lg flex items-center justify-center gap-2 hover:brightness-110 transition-all shadow-lg shadow-primary/30">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+                            ADD TO CART
+                        </button>
+</div>
+</div>
+<div class="flex gap-4 p-4 border border-[#e8cece] dark:border-[#3d2020] rounded-lg">
+<div class="flex-1 flex flex-col items-center text-center gap-1">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+<span class="text-[10px] font-bold uppercase">Fast Ship</span>
+</div>
+<div class="flex-1 flex flex-col items-center text-center gap-1 border-x border-[#e8cece] dark:border-[#3d2020]">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+<span class="text-[10px] font-bold uppercase">Anti-Peel</span>
+</div>
+<div class="flex-1 flex flex-col items-center text-center gap-1">
+<span class="material-symbols-outlined text-primary">eco</span>
+<span class="text-[10px] font-bold uppercase">100% Recycled</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Description and Details -->
+<div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-[#e8cece] dark:border-[#3d2020] pt-12">
+<div>
+<h3 class="text-2xl font-black mb-4">Product Description</h3>
+<p class="text-[#1c0d0d] dark:text-gray-300 leading-relaxed opacity-80 mb-6">
+                    Elevate your game with the Aphrodite Pro-Performance Custom Jersey. Engineered for elite athletes, this jersey features our proprietary 'AeroFlow' moisture-wicking technology that keeps you cool when the pressure is on. Every stitch is reinforced for maximum durability on the field, court, or pitch.
+                </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+                        100% Breathable Performance Polyester
+                    </li>
+<li class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+                        Double-stitched hems for high-impact durability
+                    </li>
+<li class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+                        Fade-resistant sublimation printing
+                    </li>
+<li class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+                        Anti-microbial and Odor-resistant fabric
+                    </li>
+</ul>
+</div>
+<div>
+<h3 class="text-2xl font-black mb-4">Technical Specs</h3>
+<div class="grid grid-cols-2 gap-y-4">
+<div class="border-b border-[#e8cece] dark:border-[#3d2020] pb-2 mr-4">
+<p class="text-[10px] font-bold uppercase text-[#9c4949] dark:text-[#cc7a7a]">Material</p>
+<p class="font-bold">AeroFlow Tech Mesh</p>
+</div>
+<div class="border-b border-[#e8cece] dark:border-[#3d2020] pb-2">
+<p class="text-[10px] font-bold uppercase text-[#9c4949] dark:text-[#cc7a7a]">Weight</p>
+<p class="font-bold">140 GSM (Lightweight)</p>
+</div>
+<div class="border-b border-[#e8cece] dark:border-[#3d2020] pb-2 mr-4">
+<p class="text-[10px] font-bold uppercase text-[#9c4949] dark:text-[#cc7a7a]">Fit</p>
+<p class="font-bold">Athletic Slim-Fit</p>
+</div>
+<div class="border-b border-[#e8cece] dark:border-[#3d2020] pb-2">
+<p class="text-[10px] font-bold uppercase text-[#9c4949] dark:text-[#cc7a7a]">Wash Care</p>
+<p class="font-bold">Machine Cold, Hang Dry</p>
+</div>
+</div>
+<div class="mt-8 p-6 bg-primary/10 rounded-xl">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-4xl">inventory</span>
+<div>
+<p class="font-bold text-sm">Bulk Ordering?</p>
+<p class="text-xs opacity-80 mt-1">Get special team pricing for orders of 10 or more. Contact our team sales department today.</p>
+<button class="mt-3 text-primary font-bold text-xs uppercase tracking-wider flex items-center gap-1">Contact Sales <span class="material-symbols-outlined text-xs">arrow_forward</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Rating Section Component Style -->
+<div class="mt-20">
+<h3 class="text-2xl font-black mb-8">Customer Reviews</h3>
+<div class="flex flex-wrap gap-x-12 gap-y-8 p-8 bg-white dark:bg-[#2d1a1a] rounded-xl border border-[#e8cece] dark:border-[#3d2020]">
+<div class="flex flex-col gap-2">
+<p class="text-5xl font-black leading-tight tracking-[-0.033em]">4.8</p>
+<div class="flex gap-0.5 text-primary">
+<span class="material-symbols-outlined fill-icon">star</span>
+<span class="material-symbols-outlined fill-icon">star</span>
+<span class="material-symbols-outlined fill-icon">star</span>
+<span class="material-symbols-outlined fill-icon">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="text-base font-normal opacity-70">Based on 124 reviews</p>
+</div>
+<div class="grid min-w-[300px] flex-1 grid-cols-[30px_1fr_50px] items-center gap-y-3">
+<p class="text-sm font-bold">5</p>
+<div class="flex h-2.5 flex-1 overflow-hidden rounded-full bg-[#e8cece] dark:bg-[#3d2020]"><div class="rounded-full bg-primary" style="width: 85%;"></div></div>
+<p class="text-[#9c4949] dark:text-[#cc7a7a] text-sm font-bold text-right">85%</p>
+<p class="text-sm font-bold">4</p>
+<div class="flex h-2.5 flex-1 overflow-hidden rounded-full bg-[#e8cece] dark:bg-[#3d2020]"><div class="rounded-full bg-primary" style="width: 10%;"></div></div>
+<p class="text-[#9c4949] dark:text-[#cc7a7a] text-sm font-bold text-right">10%</p>
+<p class="text-sm font-bold">3</p>
+<div class="flex h-2.5 flex-1 overflow-hidden rounded-full bg-[#e8cece] dark:bg-[#3d2020]"><div class="rounded-full bg-primary" style="width: 3%;"></div></div>
+<p class="text-[#9c4949] dark:text-[#cc7a7a] text-sm font-bold text-right">3%</p>
+<p class="text-sm font-bold">2</p>
+<div class="flex h-2.5 flex-1 overflow-hidden rounded-full bg-[#e8cece] dark:bg-[#3d2020]"><div class="rounded-full bg-primary" style="width: 1%;"></div></div>
+<p class="text-[#9c4949] dark:text-[#cc7a7a] text-sm font-bold text-right">1%</p>
+<p class="text-sm font-bold">1</p>
+<div class="flex h-2.5 flex-1 overflow-hidden rounded-full bg-[#e8cece] dark:bg-[#3d2020]"><div class="rounded-full bg-primary" style="width: 1%;"></div></div>
+<p class="text-[#9c4949] dark:text-[#cc7a7a] text-sm font-bold text-right">1%</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-[#e8cece] dark:border-[#3d2020] mt-20 py-12 px-4">
+<div class="max-w-[1200px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="col-span-2 lg:col-span-1">
+<div class="flex items-center gap-2 mb-4">
+<div class="size-6 bg-primary rounded flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xs">sports_basketball</span>
+</div>
+<h2 class="text-lg font-bold">Aphrodite</h2>
+</div>
+<p class="text-sm opacity-60">High-performance custom sportswear for teams and individuals. Redefining your game since 2024.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4">Shop</h4>
+<ul class="text-sm space-y-2 opacity-60">
+<li><a class="hover:text-primary transition-colors" href="#">Basketball</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Soccer</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Training</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Support</h4>
+<ul class="text-sm space-y-2 opacity-60">
+<li><a class="hover:text-primary transition-colors" href="#">Size Guide</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Shipping Info</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Returns</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Follow Us</h4>
+<div class="flex gap-4">
+<div class="size-8 rounded-full bg-[#f4e7e7] dark:bg-[#3d2020] flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</div>
+<div class="size-8 rounded-full bg-[#f4e7e7] dark:bg-[#3d2020] flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-12 pt-8 border-t border-[#e8cece] dark:border-[#3d2020] text-center text-[10px] font-bold uppercase opacity-40">
+            © 2024 Aphrodite Customisation. All rights reserved.
+        </div>
+</footer>
+</body></html>
